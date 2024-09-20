@@ -1,0 +1,125 @@
+body{
+    background-color: antiquewhite;
+}
+#title{
+    max-width: 500px;
+    max-height: 400px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+}
+.menu-name{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 50px;
+    margin-bottom: 0px;
+    word-spacing: -10px;
+}
+.line{
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 3px solid rgb(214, 157, 82);
+}
+#buttton-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+button{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(155, 95, 17);
+    color: rgb(236, 236, 236);
+    border-radius: 8px;
+    box-shadow: 0 4px #666;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 25px;
+}
+button:hover{
+    background-color: rgb(227, 159, 69);
+}
+button:active {
+    background-color: rgb(231, 179, 112);
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+#section-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
+    gap: 20px; /* space between columns */
+    justify-content: center; 
+}
+
+#menu-items {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.photo { 
+    width: 100%; /*  width to fit within the grid column */
+    max-width: 300px;
+    height: auto;
+    border: 2px solid rgb(214, 157, 82);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; 
+}
+
+.item-info {
+    width: 100%; /*  width to fit within the grid column */
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.same-line {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.price {
+    padding-right: 10px; /*  padding to bring the price closer */
+    color: rgb(217, 152, 60);
+}
+
+.item-text {
+    margin: 0;
+}
+  
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+#section-center {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+}
+#menu-items {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+}
+.photo {
+    width: 100%; 
+    max-width: 200px;
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 20px; /* Add bottom margin */
+}
+.item-info {
+    width: 100%; /* Ensure item info takes full width */
+}
+.price {
+    margin-top: 10px; /* Add top margin */
+}
+/* Style the button */
+button {
+    margin: 5px;
+    padding: 8px 10px; 
+    font-size: 10px; 
+  }
+}
+
