@@ -49,6 +49,32 @@ button:active {
     box-shadow: 0 1px #666;
     transform: translateY(4px);
 }
+/* display img for home page */
+.home-img:nth-child(1) {
+    width: 100%; /*  width to fit within the grid column */
+    max-width: 125px;
+    height: auto;
+    position: absolute;
+    top: 40px;
+    left: 343px;
+}
+.home-img:nth-child(2) {
+    width: 100%; 
+    max-width: 96px;
+    height: auto;
+    position: absolute;
+    top: 40px;
+    right: 343px;
+}
+#RS-img {
+    width: 100%; 
+    max-width: 250px;
+    height: auto;
+    position: absolute;
+    top: 70%;
+    right: 41%;
+}
+/* display meals */
 #section-center {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -123,5 +149,20 @@ button {
     padding: 8px 10px; 
     font-size: 10px; 
   }
+/* display img for home page */
+.home-img:nth-child(1) {
+    max-width: 70px;
+    height: auto;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+.home-img:nth-child(2) {
+    max-width: 50px;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
 }
 

@@ -1,22 +1,41 @@
 console.log("working");
 
+//hidding img
+const rs = document.querySelector('#RS-img'); 
+function hideImage() {
+    rs.style.display = 'none';
+}
+
+//Btn to alternate
 const titleDiv = document.getElementById('title');
 const title = titleDiv.querySelector('h2');
 const homeBtn = document.getElementById('button1');
 homeBtn.addEventListener('click', home);
 const mealList = document.getElementById('section-center');
 const lunchBtn = document.getElementById('button2');
-lunchBtn.addEventListener('click', getLunchList);
+lunchBtn.addEventListener('click', () => {
+    hideImage();
+    getLunchList();
+});
+
 const dinnerBtn = document.getElementById('button3');
-dinnerBtn.addEventListener('click', getDinnerList);
+dinnerBtn.addEventListener('click', () => {
+    hideImage();
+    getDinnerList();
+});
+
 const dessertBtn = document.getElementById('button4');
-dessertBtn.addEventListener('click', getDessertList);
+dessertBtn.addEventListener('click', () => {
+    hideImage(); 
+    getDessertList();
+});
 
 let prices = ["8.99","9.5","10.99","7","5.89"]; // Array to store prices
 let priceIndex = 0; // Counter to keep track of the current index
 
 function home(){
     title.innerText = "Cheap Eats";
+    rs.style.display = 'block';
     mealList.innerHTML ='' // Clear any exisiting content
 }
 
