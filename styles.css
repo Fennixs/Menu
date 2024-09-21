@@ -51,7 +51,8 @@ button:active {
 }
 #section-center {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
+    grid-template-columns: repeat(3, 1fr); 
+    margin-left: 100px;
     gap: 20px; /* space between columns */
     justify-content: center; 
 }
@@ -98,6 +99,7 @@ button:active {
 @media (max-width: 768px) {
 #section-center {
     grid-template-columns: 1fr; /* Change to a single column layout */
+    margin-left: 90px;
 }
 #menu-items {
     flex-direction: column; /* Stack items vertically */
