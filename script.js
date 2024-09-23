@@ -8,16 +8,30 @@ const fork = document.querySelector('#mid-home-img-fork');
 const infoBtn = document.querySelector('#info-btn');
 //fix bug TODO
 infoBtn.addEventListener('mouseover', () => {
-    text.innerText = "Mouse in (over)";
+    text.innerText = "about";
 });
 
 infoBtn.addEventListener('mouseout', () => {
     text.innerText = " ";
 });
+
 const infoBtn1 = document.querySelector('#info-btn1');
-infoBtn1.addEventListener('mouseover',aboutBtn);
+infoBtn1.addEventListener('mouseover', () => {
+    text.innerText = "info";
+});
+
+infoBtn.addEventListener('mouseout', () => {
+    text.innerText = " ";
+});
 const infoBtn2 = document.querySelector('#info-btn2');
-infoBtn2.addEventListener('mouseover',factBtn);
+infoBtn2.addEventListener('mouseover', () => {
+    text.innerText = "facts";
+});
+
+infoBtn.addEventListener('mouseout', () => {
+    text.innerText = " ";
+});
+
 function hideImage() {
     egg.style.display = 'none';
     spoon.style.display = 'none';
