@@ -49,7 +49,7 @@ button:active {
     box-shadow: 0 1px #666;
     transform: translateY(4px);
 }
-/* display img for home page */
+/* display img for home page TODO FIX display */ 
 #mid-home{
     display: flex;
     justify-content: center;
@@ -203,7 +203,7 @@ button:active {
     padding: 8px 10px; 
     font-size: 10px; 
   }
-/* display img & btn for home page */
+/* display img & btn for home page  TODO FIX MEDIA*/
 #mid-home-img-egg {
     width: 100%; 
     max-width: 250px;
