@@ -1,12 +1,22 @@
 console.log("working");
 
-//hidding img/home btn
+//hidding img and home btn display
+const text = document.querySelector("#text");
 const egg = document.querySelector('#mid-home-img-egg'); 
 const spoon = document.querySelector('#mid-home-img-spoon'); 
 const fork = document.querySelector('#mid-home-img-fork'); 
 const infoBtn = document.querySelector('#info-btn');
+infoBtn.addEventListener('mouseover', () => {
+    text.innerText = "Mouse in (over)";
+});
+
+infoBtn.addEventListener('mouseout', () => {
+    text.innerText = " ";
+});
 const infoBtn1 = document.querySelector('#info-btn1');
+infoBtn1.addEventListener('mouseover',aboutBtn);
 const infoBtn2 = document.querySelector('#info-btn2');
+infoBtn2.addEventListener('mouseover',factBtn);
 function hideImage() {
     egg.style.display = 'none';
     spoon.style.display = 'none';
@@ -14,6 +24,17 @@ function hideImage() {
     infoBtn.style.display = 'none';
     infoBtn1.style.display = 'none';
     infoBtn2.style.display = 'none';
+}
+
+
+function infoBtn(){
+    text.innerText = "TEST"
+}
+function aboutBtn(){
+    text.innerText = "hello"
+}
+function factBtn(){
+    text.innerText = "fire"
 }
 
 //Btn to alternate

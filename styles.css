@@ -116,6 +116,17 @@ button:active {
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
 }
+.facts-btn {
+    position: absolute;
+    top: 58%;
+    right: 40.8%;
+    font-style: italic;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:16px;
+    padding:4px 18px;
+}
 .overlay {
     position: absolute;
     bottom: 0;
@@ -128,11 +139,11 @@ button:active {
     transition: .5s ease;
 }
   
-  .home-cover:hover .overlay {
+.home-cover:hover .overlay {
     width: 40%;
 }
   
-  .text{
+#text{
     color: white;
     font-size: 20px;
     position: absolute;
@@ -142,17 +153,6 @@ button:active {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     white-space: nowrap;
-}
-.facts-btn {
-    position: absolute;
-    top: 58%;
-    right: 40.8%;
-    font-style: italic;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:16px;
-    padding:4px 18px;
 }
 /* display meals */
 #section-center {
