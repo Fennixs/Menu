@@ -5,27 +5,47 @@ const text = document.querySelector("#text");
 const egg = document.querySelector('#mid-home-img-egg'); 
 const spoon = document.querySelector('#mid-home-img-spoon'); 
 const fork = document.querySelector('#mid-home-img-fork'); 
+//about btn homepage
 const infoBtn = document.querySelector('#info-btn');
-//fix bug TODO
 infoBtn.addEventListener('mouseover', () => {
-    text.innerText = "about";
+    text.innerText = "Welcome to Cheap Food, where deliciousness meets affordability!\n\n 🍔🍕🍣 At Cheap Food, we believe that everyone deserves to enjoy mouth-watering meals without breaking the bank. Our mission is to provide high-quality, tasty dishes at unbeatable prices.\n\n From savory burgers and crispy fries to fresh sushi and hearty pasta, our diverse menu has something for everyone. Founded in 2024, Cheap Food was born out of a passion for great food and a desire to make dining out accessible to all. Our team of talented chefs uses only the freshest ingredients to craft each dish with love and care. Whether you’re grabbing a quick bite on the go or enjoying a leisurely meal with friends and family, we strive to make every visit a delightful experience. Join us at Cheap Food and discover why we’re the go-to spot for affordable, delicious dining. We can’t wait to serve you!";
 });
 
 infoBtn.addEventListener('mouseout', () => {
     text.innerText = " ";
 });
-
+//info btn homepage
 const infoBtn1 = document.querySelector('#info-btn1');
 infoBtn1.addEventListener('mouseover', () => {
-    text.innerText = "info";
-});
+    text.innerText = 
+    "Monday - Friday: \n" +
 
+    "Breakfast: 7:00 AM - 10:30 AM \n" +
+    "Lunch: 11:30 AM - 2:30 PM \n" + 
+    "Dinner: 5:00 PM - 10:00 PM \n" +
+    "Saturday: closed \n\n" +
+
+    "Brunch: 8:00 AM - 2:00 PM \n" +
+    "Dinner: 5:00 PM - 11:00 PM \n" +
+    "Sunday: closed \n\n" +
+
+    "Happy Hour: Monday - Friday, 4:00 PM - 6:00 PM \n" +
+    "Live Music: Friday and Saturday, 7:00 PM - 10:00 PM \n";
+});
+//facts btn homepage
 infoBtn.addEventListener('mouseout', () => {
     text.innerText = " ";
 });
+
 const infoBtn2 = document.querySelector('#info-btn2');
 infoBtn2.addEventListener('mouseover', () => {
-    text.innerText = "facts";
+    text.innerText = "Fun Facts About Cheap Eats \n\n" +
+        "1. World’s Largest Burger: Cheap Eats once served a burger so large that it took 10 people to finish it!\n\n " +
+        "2. Secret Ingredient: The secret ingredient in their famous sauce is a rare herb that only grows in the owner’s backyard.\n\n " +
+        "3. Celebrity Chef: The head chef at Cheap Eats is rumored to have cooked for royalty and rock stars.\n\n " +
+        "4. Mystery Dish: Every Friday, they serve a mystery dish that changes every week and has never been repeated.\n\n " +
+        "5. 24-Hour Challenge: They have a 24-hour eating challenge where you can eat as much as you want for a whole day for just $50.\n\n\n " +
+        "Disclaimer: This is a demo site and all facts are fictional. ";
 });
 
 infoBtn.addEventListener('mouseout', () => {

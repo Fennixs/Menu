@@ -112,9 +112,6 @@ button:active {
     font-family:Arial;
     font-size:16px;
     padding:4px 18px;
-    -webkit-transition: ease-out 0.4s;
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
 }
 .facts-btn {
     position: absolute;
@@ -132,7 +129,7 @@ button:active {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: #684f02;
     overflow: hidden;
     width: 0;
     height: 100%;
@@ -152,7 +149,6 @@ button:active {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    white-space: nowrap;
 }
 /* display meals */
 #section-center {
@@ -224,25 +220,53 @@ button:active {
     margin-top: 10px; /* Add top margin */
 }
 /* Style the button */
-button {
+#button1, #button2, #button3, #button4 {
     margin: 5px;
     padding: 8px 10px; 
     font-size: 10px; 
   }
-/* display img for home page */
-.home-img:nth-child(1) {
-    max-width: 70px;
+/* display img & btn for home page */
+#mid-home-img-egg {
+    width: 100%; 
+    max-width: 250px;
     height: auto;
     position: absolute;
-    top: 40px;
-    left: 10px;
+    top: 40%;
+    right: 15%;
 }
-.home-img:nth-child(2) {
-    max-width: 50px;
+#mid-home-img-spoon {
+    width: 100%; 
+    max-width: 100px;
     height: auto;
     position: absolute;
-    top: 50px;
-    right: 20px;
+    top: 40%;
+    right: 10%;
+}
+#mid-home-img-fork {
+    width: 100%; 
+    max-width: 100px;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    right: 70%;
+}
+.info-btn {
+    position: absolute;
+    top: 60%;
+    left: 120px;
+    font-size:12px;
+}
+.about-btn {
+    position: absolute;
+    top: 49%;
+    left: 105px;
+    font-size:12px;
+}
+.facts-btn {
+    position: absolute;
+    top: 54%;
+    left: 195px;
+    font-size:12px;
 }
 }
 
