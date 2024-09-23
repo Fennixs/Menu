@@ -91,29 +91,68 @@ button:active {
     right: 60%;
 }
 /* home page info btns */
-.info {
-    width: 100%; 
-    max-width: 60px;
-    height: auto;
+.info-btn {
     position: absolute;
     top: 67%;
-    right: 49%;
+    right: 48.7%;
+    font-style: italic;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:16px;
+    padding:4px 21px;
 }
-.about {
-    width: 100%; 
-    max-width: 60px;
-    height: auto;
+.about-btn {
     position: absolute;
-    top: 53%;
-    right: 50%;
+    top: 52.5%;
+    right: 49.5%;
+    font-style: italic;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:16px;
+    padding:4px 18px;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
 }
-.facts {
-    width: 100%; 
-    max-width: 60px;
-    height: auto;
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+  .home-cover:hover .overlay {
+    width: 40%;
+}
+  
+  .text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+.facts-btn {
     position: absolute;
     top: 58%;
-    right: 41%;
+    right: 40.8%;
+    font-style: italic;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:16px;
+    padding:4px 18px;
 }
 /* display meals */
 #section-center {
