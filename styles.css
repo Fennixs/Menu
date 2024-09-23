@@ -29,7 +29,7 @@ body{
     align-items: center;
     padding: 5px;
 }
-button{
+#button1, #button2, #button3, #button4{
     padding: 10px 20px;
     font-size: 20px;
     background-color: rgb(155, 95, 17);
@@ -89,6 +89,31 @@ button:active {
     position: absolute;
     top: 35%;
     right: 60%;
+}
+/* home page info btns */
+.info {
+    width: 100%; 
+    max-width: 60px;
+    height: auto;
+    position: absolute;
+    top: 67%;
+    right: 49%;
+}
+.about {
+    width: 100%; 
+    max-width: 60px;
+    height: auto;
+    position: absolute;
+    top: 53%;
+    right: 50%;
+}
+.facts {
+    width: 100%; 
+    max-width: 60px;
+    height: auto;
+    position: absolute;
+    top: 58%;
+    right: 41%;
 }
 /* display meals */
 #section-center {

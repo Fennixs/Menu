@@ -1,13 +1,19 @@
 console.log("working");
 
-//hidding img
+//hidding img/home btn
 const egg = document.querySelector('#mid-home-img-egg'); 
 const spoon = document.querySelector('#mid-home-img-spoon'); 
 const fork = document.querySelector('#mid-home-img-fork'); 
+const infoBtn = document.querySelector('#info-btn');
+const infoBtn1 = document.querySelector('#info-btn1');
+const infoBtn2 = document.querySelector('#info-btn2');
 function hideImage() {
     egg.style.display = 'none';
     spoon.style.display = 'none';
     fork.style.display = 'none';
+    infoBtn.style.display = 'none';
+    infoBtn1.style.display = 'none';
+    infoBtn2.style.display = 'none';
 }
 
 //Btn to alternate
@@ -42,6 +48,9 @@ function home(){
     egg.style.display = 'block';
     spoon.style.display = 'block';
     fork.style.display = 'block';
+    infoBtn.style.display = 'block';
+    infoBtn1.style.display = 'block';
+    infoBtn2.style.display = 'block';
     mealList.innerHTML ='' // Clear any exisiting content
 }
 
