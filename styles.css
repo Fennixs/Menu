@@ -50,49 +50,29 @@ button:active {
     transform: translateY(4px);
 }
 /* display img for home page */
-.home-img:nth-child(1) {
-    width: 100%; /*  width to fit within the grid column */
-    max-width: 125px;
-    height: auto;
-    position: absolute;
-    top: 40px;
-    left: 343px;
-}
-.home-img:nth-child(2) {
-    width: 100%; 
-    max-width: 96px;
-    height: auto;
-    position: absolute;
-    top: 40px;
-    right: 343px;
+#mid-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #mid-home-img-egg {
     width: 100%; 
     max-width: 350px;
     height: auto;
-    position: absolute;
-    top: 40%;
-    right: 36%;
 }
 #mid-home-img-spoon {
     width: 100%; 
     max-width: 235px;
     height: auto;
-    position: absolute;
-    top: 33%;
-    right: 24%;
+    padding-right: 30px;
 }
 #mid-home-img-fork {
     width: 100%; 
     max-width: 225px;
     height: auto;
-    position: absolute;
-    top: 35%;
-    right: 60%;
 }
-/* home page info btns */
+/* home page info/about/facts btns */
 .info-btn {
-    position: absolute;
     top: 67%;
     right: 48.7%;
     font-style: italic;
@@ -103,8 +83,7 @@ button:active {
     padding:4px 21px;
 }
 .about-btn {
-    position: absolute;
-    top: 52.5%;
+    top: 0%;
     right: 49.5%;
     font-style: italic;
     cursor:pointer;
@@ -114,7 +93,6 @@ button:active {
     padding:4px 18px;
 }
 .facts-btn {
-    position: absolute;
     top: 58%;
     right: 40.8%;
     font-style: italic;
@@ -267,6 +245,19 @@ button:active {
     top: 54%;
     left: 195px;
     font-size:12px;
+}
+.overlay {
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+  
+.home-cover:hover .overlay {
+    width: 100%;
+    height: 30%;
+}
+#text{
+    font-size: 10px;
 }
 }
 
