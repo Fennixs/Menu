@@ -6,6 +6,7 @@ const egg = document.querySelector('#mid-home-img-egg');
 const spoon = document.querySelector('#mid-home-img-spoon'); 
 const fork = document.querySelector('#mid-home-img-fork'); 
 const infoBtn = document.querySelector('#info-btn');
+//fix bug TODO
 infoBtn.addEventListener('mouseover', () => {
     text.innerText = "Mouse in (over)";
 });
@@ -25,18 +26,6 @@ function hideImage() {
     infoBtn1.style.display = 'none';
     infoBtn2.style.display = 'none';
 }
-
-
-function infoBtn(){
-    text.innerText = "TEST"
-}
-function aboutBtn(){
-    text.innerText = "hello"
-}
-function factBtn(){
-    text.innerText = "fire"
-}
-
 //Btn to alternate
 const titleDiv = document.getElementById('title');
 const title = titleDiv.querySelector('h2');
