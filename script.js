@@ -1,9 +1,13 @@
 console.log("working");
 
 //hidding img
-const rs = document.querySelector('#RS-img'); 
+const egg = document.querySelector('#mid-home-img-egg'); 
+const spoon = document.querySelector('#mid-home-img-spoon'); 
+const fork = document.querySelector('#mid-home-img-fork'); 
 function hideImage() {
-    rs.style.display = 'none';
+    egg.style.display = 'none';
+    spoon.style.display = 'none';
+    fork.style.display = 'none';
 }
 
 //Btn to alternate
@@ -35,7 +39,9 @@ let priceIndex = 0; // Counter to keep track of the current index
 
 function home(){
     title.innerText = "Cheap Eats";
-    rs.style.display = 'block';
+    egg.style.display = 'block';
+    spoon.style.display = 'block';
+    fork.style.display = 'block';
     mealList.innerHTML ='' // Clear any exisiting content
 }
 

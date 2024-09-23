@@ -66,13 +66,29 @@ button:active {
     top: 40px;
     right: 343px;
 }
-#RS-img {
+#mid-home-img-egg {
     width: 100%; 
-    max-width: 250px;
+    max-width: 350px;
     height: auto;
     position: absolute;
-    top: 70%;
-    right: 41%;
+    top: 40%;
+    right: 36%;
+}
+#mid-home-img-spoon {
+    width: 100%; 
+    max-width: 235px;
+    height: auto;
+    position: absolute;
+    top: 33%;
+    right: 24%;
+}
+#mid-home-img-fork {
+    width: 100%; 
+    max-width: 225px;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    right: 60%;
 }
 /* display meals */
 #section-center {
