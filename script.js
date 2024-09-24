@@ -1,11 +1,11 @@
 console.log("working");
 
-//hidding img and home btn display
 const text = document.querySelector("#text");
 const egg = document.querySelector('#mid-home-img-egg'); 
 const infoBtn = document.querySelector('.info-btn');
 const infoBtn1 = document.querySelector('.facts-btn');
 const infoBtn2 = document.querySelector('.about-btn')
+const mediaQuery = window.matchMedia('(max-width: 768px)');
 
 
 
@@ -58,7 +58,8 @@ function hideImage() {
     infoBtn1.style.display = 'none';
     infoBtn2.style.display = 'none';
 }
-//Btn to alternate
+
+//Btn to alternate to differnt meals
 const titleDiv = document.getElementById('title');
 const title = titleDiv.querySelector('h2');
 const homeBtn = document.getElementById('button1');
@@ -72,6 +73,7 @@ lunchBtn.addEventListener('click', () => {
 
 const dinnerBtn = document.getElementById('button3');
 dinnerBtn.addEventListener('click', () => {
+    document.querySelector('.home-cover').classList.add('hidden');
     hideImage();
     getDinnerList();
 });
@@ -88,10 +90,18 @@ let priceIndex = 0; // Counter to keep track of the current index
 function home(){
     title.innerText = "Cheap Eats";
     egg.style.display = 'block';
-    infoBtn.style.display = 'block';
-    infoBtn1.style.display = 'block';
-    infoBtn2.style.display = 'block';
     mealList.innerHTML ='' // Clear any exisiting content
+    if (mediaQuery.matches) {
+        // Media query is active
+        infoBtn.style.display = 'none';
+        infoBtn1.style.display = 'none';
+        infoBtn2.style.display = 'none';
+    } else {
+        // Media query is not active
+        infoBtn.style.display = 'block';
+        infoBtn1.style.display = 'block';
+        infoBtn2.style.display = 'block';
+    }
 }
 
 function getLunchList(){
