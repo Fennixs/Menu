@@ -4,10 +4,31 @@ const text = document.querySelector("#text");
 const egg = document.querySelector('#mid-home-img-egg'); 
 const infoBtn = document.querySelector('.info-btn');
 const infoBtn1 = document.querySelector('.facts-btn');
-const infoBtn2 = document.querySelector('.about-btn')
+const infoBtn2 = document.querySelector('.about-btn');
 const mediaQuery = window.matchMedia('(max-width: 768px)');
 
+// Function to update display properties based on media query
+function updateDisplay() {
+    if (mediaQuery.matches) {
+        // Media query is active
+        egg.style.display = 'none';
+        infoBtn.style.display = 'none';
+        infoBtn1.style.display = 'none';
+        infoBtn2.style.display = 'none';
+    } else {
+        // Media query is not active
+        egg.style.display = 'block';
+        infoBtn.style.display = 'block';
+        infoBtn1.style.display = 'block';
+        infoBtn2.style.display = 'block';
+    }
+}
 
+// Initial check
+updateDisplay();
+
+// Add an event listener to handle changes in the media query
+mediaQuery.addEventListener('change', updateDisplay);
 
 // btn on img in homepage
 document.querySelectorAll('.about-btn, .info-btn, .facts-btn').forEach(btn => {
@@ -51,7 +72,6 @@ document.querySelectorAll('.about-btn, .info-btn, .facts-btn').forEach(btn => {
     });
 });
 
-
 function hideImage() {
     egg.style.display = 'none';
     infoBtn.style.display = 'none';
@@ -91,17 +111,6 @@ function home(){
     title.innerText = "Cheap Eats";
     egg.style.display = 'block';
     mealList.innerHTML ='' // Clear any exisiting content
-    if (mediaQuery.matches) {
-        // Media query is active
-        infoBtn.style.display = 'none';
-        infoBtn1.style.display = 'none';
-        infoBtn2.style.display = 'none';
-    } else {
-        // Media query is not active
-        infoBtn.style.display = 'block';
-        infoBtn1.style.display = 'block';
-        infoBtn2.style.display = 'block';
-    }
 }
 
 function getLunchList(){
@@ -136,7 +145,6 @@ function getDessertList(){
     })
     .catch(error => console.error('Error fetching data:', error));
 }
-
 
 function displayMeal(meals){
     mealList.innerHTML ='' // Clear any exisiting content
@@ -178,3 +186,8 @@ function displayMeal(meals){
     });
 }
 
+// Initial check to update display properties based on media query
+updateDisplay();
+
+// Add an event listener to handle changes in the media query
+mediaQuery.addEventListener('change', updateDisplay);
