@@ -3,8 +3,6 @@ console.log("working");
 //hidding img and home btn display
 const text = document.querySelector("#text");
 const egg = document.querySelector('#mid-home-img-egg'); 
-const spoon = document.querySelector('#mid-home-img-spoon'); 
-const fork = document.querySelector('#mid-home-img-fork'); 
 //about btn homepage
 const infoBtn = document.querySelector('#info-btn');
 infoBtn.addEventListener('mouseover', () => {
@@ -54,8 +52,6 @@ infoBtn.addEventListener('mouseout', () => {
 
 function hideImage() {
     egg.style.display = 'none';
-    spoon.style.display = 'none';
-    fork.style.display = 'none';
     infoBtn.style.display = 'none';
     infoBtn1.style.display = 'none';
     infoBtn2.style.display = 'none';
@@ -90,8 +86,6 @@ let priceIndex = 0; // Counter to keep track of the current index
 function home(){
     title.innerText = "Cheap Eats";
     egg.style.display = 'block';
-    spoon.style.display = 'block';
-    fork.style.display = 'block';
     infoBtn.style.display = 'block';
     infoBtn1.style.display = 'block';
     infoBtn2.style.display = 'block';

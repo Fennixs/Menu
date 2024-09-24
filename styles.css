@@ -54,53 +54,48 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; 
 }
 #mid-home-img-egg {
-    width: 100%; 
-    max-width: 350px;
+    width: 37%; 
     height: auto;
+    margin-left: 340px;
 }
-#mid-home-img-spoon {
-    width: 100%; 
-    max-width: 235px;
-    height: auto;
-    padding-right: 30px;
-}
-#mid-home-img-fork {
-    width: 100%; 
-    max-width: 225px;
-    height: auto;
+.home-cover {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Center the buttons */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
 }
 /* home page info/about/facts btns */
 .info-btn {
-    top: 67%;
-    right: 48.7%;
     font-style: italic;
     cursor:pointer;
     color:#ffffff;
     font-family:Arial;
     font-size:16px;
-    padding:4px 21px;
+    margin-left: 152px;
+    margin-bottom: 35px;
 }
 .about-btn {
-    top: 0%;
-    right: 49.5%;
     font-style: italic;
     cursor:pointer;
     color:#ffffff;
     font-family:Arial;
     font-size:16px;
-    padding:4px 18px;
+    margin-bottom: 15px;
+    margin-right: 22px;
 }
 .facts-btn {
-    top: 58%;
-    right: 40.8%;
     font-style: italic;
     cursor:pointer;
     color:#ffffff;
     font-family:Arial;
     font-size:16px;
-    padding:4px 18px;
+    margin-bottom: 25px;
 }
 .overlay {
     position: absolute;
@@ -112,12 +107,11 @@ button:active {
     width: 0;
     height: 100%;
     transition: .5s ease;
+    z-index: 1;
 }
-  
 .home-cover:hover .overlay {
-    width: 40%;
+    width: 100%;
 }
-  
 #text{
     color: white;
     font-size: 20px;
@@ -206,27 +200,9 @@ button:active {
 /* display img & btn for home page  TODO FIX MEDIA*/
 #mid-home-img-egg {
     width: 100%; 
-    max-width: 250px;
     height: auto;
-    position: absolute;
     top: 40%;
     right: 15%;
-}
-#mid-home-img-spoon {
-    width: 100%; 
-    max-width: 100px;
-    height: auto;
-    position: absolute;
-    top: 40%;
-    right: 10%;
-}
-#mid-home-img-fork {
-    width: 100%; 
-    max-width: 100px;
-    height: auto;
-    position: absolute;
-    top: 40%;
-    right: 70%;
 }
 .info-btn {
     position: absolute;
