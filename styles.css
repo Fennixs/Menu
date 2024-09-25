@@ -1,235 +1,240 @@
-body{
-    background-color: antiquewhite;
+body {
+  background-color: antiquewhite;
 }
-#title{
-    max-width: 500px;
-    max-height: 400px;
-    margin-top: 30px;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    text-align: center;
+#title {
+  max-width: 500px;
+  max-height: 400px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align: center;
 }
-.menu-name{
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 50px;
-    margin-bottom: 0px;
-    word-spacing: -10px;
+.menu-name {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 50px;
+  margin-bottom: 0px;
+  word-spacing: -10px;
 }
-.line{
-    max-width: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: 3px solid rgb(214, 157, 82);
+.line {
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid rgb(214, 157, 82);
 }
-#buttton-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
+#buttton-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
 }
-#button1, #button2, #button3, #button4{
-    padding: 10px 20px;
-    font-size: 20px;
-    background-color: rgb(155, 95, 17);
-    color: rgb(236, 236, 236);
-    border-radius: 8px;
-    box-shadow: 0 4px #666;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    margin: 25px;
+#button1,
+#button2,
+#button3,
+#button4 {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: rgb(155, 95, 17);
+  color: rgb(236, 236, 236);
+  border-radius: 8px;
+  box-shadow: 0 4px #666;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 25px;
 }
-button:hover{
-    background-color: rgb(227, 159, 69);
+button:hover {
+  background-color: rgb(227, 159, 69);
 }
 button:active {
-    background-color: rgb(231, 179, 112);
-    box-shadow: 0 1px #666;
-    transform: translateY(4px);
+  background-color: rgb(231, 179, 112);
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
 }
-/* display img for home page*/ 
+/* display img for home page*/
 #mid-home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 50vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 50vh;
 }
 
 #mid-home-img-egg {
-    width: 40%; 
-    height: auto;
-    margin-top: 80px;
-    margin-left: 140px;
+  width: 40%;
+  height: auto;
+  margin-top: 80px;
+  margin-left: 140px;
 }
 
 .home-cover {
-    position: absolute;
-    width: 100%;
-    height: 50vh; /* Set height to half of the viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 50vh; /* Set height to half of the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .overlay {
-    position: fixed; /* Change to fixed */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #684f02;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;
-    z-index: 1; /* Ensure overlay is above other elements */
+  position: fixed; /* Change to fixed */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #684f02;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+  z-index: 1; /* Ensure overlay is above other elements */
 }
 
 #text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; /* Ensure text is above overlay */
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Ensure text is above overlay */
 }
 
 /* home page info/about/facts btns */
-.about-btn, .info-btn, .facts-btn {
-    font-style: italic;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 16px;
-    padding: 4px 18px; /* Add padding for better appearance */
-    position: absolute; 
+.about-btn,
+.info-btn,
+.facts-btn {
+  font-style: italic;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 4px 18px; /* Add padding for better appearance */
+  position: absolute;
 }
 
 /* Adjust the positions of each button */
 .about-btn {
-    top: 43%; 
-    left: 44%; 
+  top: 43%;
+  left: 44%;
 }
 
 .info-btn {
-    top: 53%; 
-    left: 51%;
+  top: 53%;
+  left: 51%;
 }
 
 .facts-btn {
-    top: 65%; 
-    left: 45%; 
+  top: 65%;
+  left: 45%;
 }
 /* display meals */
 #section-center {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    margin-left: 100px;
-    gap: 20px; /* space between columns */
-    justify-content: center; 
-    margin-top: -350px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 100px;
+  gap: 20px; /* space between columns */
+  justify-content: center;
+  margin-top: -350px;
 }
 
 #menu-items {
-    display: flex;
-    align-items: center; 
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.photo { 
-    width: 100%; /*  width to fit within the grid column */
-    max-width: 300px;
-    height: auto;
-    border: 2px solid rgb(214, 157, 82);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-right: 20px; 
+.photo {
+  width: 100%; /*  width to fit within the grid column */
+  max-width: 300px;
+  height: auto;
+  border: 2px solid rgb(214, 157, 82);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
 }
 
 .item-info {
-    width: 100%; /*  width to fit within the grid column */
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
+  width: 100%; /*  width to fit within the grid column */
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
 }
 
 .same-line {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .price {
-    padding-right: 10px; /*  padding to bring the price closer */
-    color: rgb(217, 152, 60);
+  padding-right: 10px; /*  padding to bring the price closer */
+  color: rgb(217, 152, 60);
 }
 
 .item-text {
-    margin: 0;
+  margin: 0;
 }
-  
+
+.card {
+    background-color: #ac6d08;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+}
+
+.schedule p {
+    margin: 5px 0;
+}
+
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
-#section-center {
+  #section-center {
     grid-template-columns: 1fr; /* Change to a single column layout */
     margin-left: 90px;
     margin-top: 50px;
-}
-#menu-items {
+  }
+  #menu-items {
     flex-direction: column; /* Stack items vertically */
     align-items: flex-start; /* Align items to the start */
-}
-.photo {
-    width: 100%; 
+  }
+  .photo {
+    width: 100%;
     max-width: 200px;
     margin-right: 0; /* Remove right margin */
     margin-bottom: 20px; /* Add bottom margin */
-}
-.item-info {
-    width: 100%; /* Ensure item info takes full width */
-}
-.price {
-    margin-top: 10px; /* Add top margin */
-}
-/* Style the button */
-#button1, #button2, #button3, #button4 {
-    margin: 5px;
-    padding: 8px 10px; 
-    font-size: 10px; 
   }
-/* display img & btn for home page  TODO FIX MEDIA*/
-#mid-home {
+  .item-info {
+    width: 100%; /* Ensure item info takes full width */
+  }
+  .price {
+    margin-top: 10px; /* Add top margin */
+  }
+  /* Style the button */
+  #button1,
+  #button2,
+  #button3,
+  #button4 {
+    margin: 5px;
+    padding: 8px 10px;
+    font-size: 10px;
+  }
+  /* display img & btn for home page  TODO FIX MEDIA*/
+  #mid-home {
     height: auto; /* Adjust height for smaller screens */
     flex-direction: column; /* Stack elements vertically */
+  }
+
+  .card {
+    display: none;
 }
 
-#mid-home-img-egg {
-    width: 80%; /* Adjust width for smaller screens */
-    margin-top: 20px;
-    margin-left: 0; /* Center the image */
-}
-
-.home-cover {
+  .home-cover {
     height: auto; /* Adjust height for smaller screens */
-}
+  }
 
-.about-btn, .info-btn, .facts-btn {
-    font-size: 10px; /* Adjust font size for smaller screens */
-}
-
-.about-btn {
-    display: none;
-}
-
-.info-btn {
-    display: none;
-}
-
-.facts-btn {
-    display: none;
-}
 }

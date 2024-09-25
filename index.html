@@ -1,43 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <script defer src="./script.js"></script>
     <title>Menu</title>
-    <link rel="shortcut icon" type="image/png" href="meal.png"/>
-</head>
-<body>
+    <link rel="shortcut icon" type="image/png" href="meal.png" />
+  </head>
+  <body>
     <div id="home">
-        <div id="title">
-            <h2 class="menu-name">Cheap Eats</h2>
-            <div class="line"></div>
+      <div id="title">
+        <h2 class="menu-name">Cheap Eats</h2>
+        <div class="line"></div>
+      </div>
+      <div id="buttton-container">
+        <button id="button1">Home</button>
+        <button id="button2">Lunch</button>
+        <button id="button3">Dinner</button>
+        <button id="button4">Dessert</button>
+      </div>
+      <div id="mid-home">
+        <img src="img/eggs.png" alt="eggs" id="mid-home-img-egg" />
+        <div class="home-cover">
+          <div id="info-btn" class="about-btn">About</div>
+          <div id="info-btn1" class="info-btn">Info</div>
+          <div id="info-btn2" class="facts-btn">Facts</div>
         </div>
-        <div id ="buttton-container">
-            <button id="button1">Home</button>
-            <button id="button2">Lunch</button>
-            <button id="button3">Dinner</button>
-            <button id="button4">Dessert</button>
+        <div class="overlay">
+          <div id="text"><!--text for hover--></div>
         </div>
-        <div id="mid-home">
-            <img src="img/eggs.png" alt="eggs" id="mid-home-img-egg">
-            <div class="home-cover">
-                <div id="info-btn" class="about-btn">About</div>
-                <div id="info-btn1" class="info-btn">Info</div>
-                <div id="info-btn2" class="facts-btn">Facts</div>
-            </div>    
-            <div class="overlay">
-                <div id="text"><!--text for hover--></div>
-            </div>
-        </div>
-        
-        <div id="section-center">
-            <article id="menu-items">
-                <!-- Menu items will be dynamically inserted here -->
-            </article>
+      </div>
+      <div class="card">
+        <div class="schedule">
+            <p>Monday - Friday:</p>
+            <p>Breakfast: 7:00 AM - 10:30 AM</p>
+            <p>Lunch: 11:30 AM - 2:30 PM</p>
+            <p>Dinner: 5:00 PM - 10:00 PM</p>
+            <p>Saturday: closed</p>
+            <p>Brunch: 8:00 AM - 2:00 PM</p>
+            <p>Dinner: 5:00 PM - 11:00 PM</p>
+            <p>Sunday: closed</p>
+            <p>Happy Hour: Monday - Friday, 4:00 PM - 6:00 PM</p>
+            <p>Live Music: Friday and Saturday, 7:00 PM - 10:00 PM</p>
         </div>
     </div>
-    
-</body>
+      <div id="section-center">
+        <article id="menu-items">
+          <!-- Menu items will be dynamically inserted here -->
+        </article>
+      </div>
+    </div>
+  </body>
 </html>
