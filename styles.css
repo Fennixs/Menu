@@ -59,6 +59,7 @@ button:active {
   align-items: center;
   position: relative;
   height: 50vh;
+  pointer-events: none;
 }
 
 #mid-home-img-egg {
@@ -131,52 +132,55 @@ button:active {
 }
 /* display meals */
 #section-center {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-left: 100px;
-  gap: 20px; /* space between columns */
-  justify-content: center;
-  margin-top: -350px;
-}
-
-#menu-items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.photo {
-  width: 100%; /*  width to fit within the grid column */
-  max-width: 300px;
-  height: auto;
-  border: 2px solid rgb(214, 157, 82);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-right: 20px;
-}
-
-.item-info {
-  width: 100%; /*  width to fit within the grid column */
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-}
-
-.same-line {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.price {
-  padding-right: 10px; /*  padding to bring the price closer */
-  color: rgb(217, 152, 60);
-}
-
-.item-text {
-  margin: 0;
-}
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 100px;
+    gap: 20px; /* space between columns */
+    justify-content: center;
+    margin-top: -350px;
+  }
+  
+  #menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+  
+  .photo {
+    width: 100%; /*  width to fit within the grid column */
+    max-width: 300px;
+    height: auto;
+    border: 2px solid rgb(214, 157, 82);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+  }
+  .photo:hover{
+      border: 8px solid rgb(184, 79, 79);
+  }
+  .item-info {
+    width: 100%; /*  width to fit within the grid column */
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .same-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .price {
+    padding-right: 10px; /*  padding to bring the price closer */
+    color: rgb(217, 152, 60);
+  }
+  
+  .item-text {
+    margin: 0;
+  }  
+/* card for media query*/
 .card {
     background-color: #ac6d08;
     color: #ffffff;
@@ -191,50 +195,143 @@ button:active {
     margin: 5px 0;
 }
 
-/* Media query for screens smaller than 768px */
-@media (max-width: 768px) {
-  #section-center {
-    grid-template-columns: 1fr; /* Change to a single column layout */
-    margin-left: 90px;
-    margin-top: 50px;
-  }
-  #menu-items {
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start */
-  }
-  .photo {
-    width: 100%;
-    max-width: 200px;
-    margin-right: 0; /* Remove right margin */
-    margin-bottom: 20px; /* Add bottom margin */
-  }
-  .item-info {
-    width: 100%; /* Ensure item info takes full width */
-  }
-  .price {
-    margin-top: 10px; /* Add top margin */
-  }
-  /* Style the button */
-  #button1,
-  #button2,
-  #button3,
-  #button4 {
-    margin: 5px;
-    padding: 8px 10px;
-    font-size: 10px;
-  }
-  /* display img & btn for home page  TODO FIX MEDIA*/
-  #mid-home {
-    height: auto; /* Adjust height for smaller screens */
-    flex-direction: column; /* Stack elements vertically */
-  }
-
-  .card {
-    display: none;
+/* Media query for screens smaller than 1200px */
+@media (max-width: 1200px) {
+    #section-center {
+        grid-template-columns: repeat(2, 1fr); /* Change to two columns */
+    }
 }
 
-  .home-cover {
-    height: auto; /* Adjust height for smaller screens */
-  }
+/* Media query for screens smaller than 992px */
+@media (max-width: 992px) {
+    #section-center {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+    #menu-items {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+    .photo {
+        max-width: 250px;
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin */
+    }
+    .item-info {
+        width: 100%; /* Ensure item info takes full width */
+    }
+    .price {
+        margin-top: 10px; /* Add top margin */
+    }
+    /* Style the button */
+    #button1,
+    #button2,
+    #button3,
+    #button4 {
+        margin: 5px;
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+    .info-btn,
+    .about-btn,
+    .facts-btn{
+        font-size: 8px;
+    }
+    /* display img & btn for home page */
+    #mid-home {
+        height: auto; /* Adjust height for smaller screens */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .home-cover {
+        height: auto; /* Adjust height for smaller screens */
+    }
+}
 
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    #section-center {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    #menu-items {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; 
+    }
+    .photo {
+        max-width: 200px;
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin */
+    }
+    .item-info {
+        width: 100%; /* Ensure item info takes full width */
+    }
+    .price {
+        margin-top: 10px; /* Add top margin */
+    }
+    /* Style the button */
+    #button1,
+    #button2,
+    #button3,
+    #button4 {
+        margin: 5px;
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+    /* display img & btn for home page */
+    #mid-home {
+        height: auto; /* Adjust height for smaller screens */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .card {
+        display: none;
+    }
+    .home-cover {
+        height: auto; /* Adjust height for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 576px) {
+    #section-center {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    #menu-items {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-end;
+    }
+    .photo {
+        max-width: 150px;
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin */
+    }
+    .item-info {
+        width: 100%; /* Ensure item info takes full width */
+    }
+    .price {
+        margin-top: 10px; /* Add top margin */
+    }
+    /* Style the button */
+    #button1,
+    #button2,
+    #button3,
+    #button4 {
+        margin: 5px;
+        padding: 8px 10px;
+        font-size: 8px;
+    }
+    /* display img & btn for home page */
+    #mid-home {
+        height: auto; /* Adjust height for smaller screens */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .card {
+        display: none;
+    }
+    .home-cover {
+        height: auto; /* Adjust height for smaller screens */
+    }
 }

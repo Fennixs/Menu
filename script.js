@@ -5,8 +5,12 @@ const egg = document.querySelector("#mid-home-img-egg");
 const infoBtn = document.querySelector(".info-btn");
 const infoBtn1 = document.querySelector(".facts-btn");
 const infoBtn2 = document.querySelector(".about-btn");
+const midHome = document.querySelector("#mid-home");
+// Set pointer-events to auto by default when the page opens
+midHome.style.pointerEvents = "auto";
+
 const card = document.querySelector(".card");
-const mediaQuery = window.matchMedia("(max-width: 768px)");
+const mediaQuery = window.matchMedia("(max-width: 992px)");
 
 // Function to update display properties based on media query
 function updateDisplay() {
@@ -81,6 +85,7 @@ function hideImage() {
   infoBtn.style.display = "none";
   infoBtn1.style.display = "none";
   infoBtn2.style.display = "none";
+  midHome.style.pointerEvents = "none";
 }
 
 //Btn to alternate to differnt meals
@@ -97,7 +102,6 @@ lunchBtn.addEventListener("click", () => {
 
 const dinnerBtn = document.getElementById("button3");
 dinnerBtn.addEventListener("click", () => {
-  document.querySelector(".home-cover").classList.add("hidden");
   hideImage();
   getDinnerList();
 });
@@ -113,6 +117,8 @@ let priceIndex = 0; // Counter to keep track of the current index
 
 function home() {
   title.innerText = "Cheap Eats";
+  card.style.display = "block";
+  midHome.style.pointerEvents = "auto";
   updateDisplay();
   mealList.innerHTML = ""; // Clear any exisiting content
 }
